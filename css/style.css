@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --color-red: #fc036b;
+    --text-color: #f5f5f5;
+    --light-black: #484872;
+    --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    --color-text: #7c7c7c  (grey);
+}
+
+/* Header Part */
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f5f5f5;
+    width: 100%;
+    padding: 20px;
+}
+
+header .menu i {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+header .menu h1 {
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+header .menu .menu-bars ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+}
+
+header .menu .menu-bars ul li a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+header .menu .menu-bars ul li a:hover {
+    color: var(--color-red);
+}
+
+header .menu .menu-bars ul .active a {
+    color: var(--color-red);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+header .menu .menu-bars ul .btn {
+    padding: 8px 15px;
+    background-color: var(--color-red);
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+header .menu .menu-bars ul .btn:hover {
+    background-color: #fff;
+    color: var(--color-red);
+}
+
+header .name {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header .name h3 {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+header .name h1 {
+    font-size: 50px;
+    color: var(--text-color);
+    margin: 50px 0 30px;
+}
+
+.underline {
+    width: 150px;
+    height: 4px;
+    background-color: var(--color-red);
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+.learn {
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #fc036b;
+    border-radius: 30px;
+    color: #f5f5f5;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.learn:hover {
+    background-color: #fff;
+    color: var(--color-red);
+    box-shadow: var(--box-shadow);
+}
+
+
+/* Section Part */
+
+
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+
+section .events {
+    text-align: center;
+    font-size: 30px;
+}
+
+section .everest {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+section .everest .camp {
+    text-align: center;
+}
+
+section .everest .camp img {
+    transition: transform 0.3s ease;
+}
+
+section .everest .camp img:hover {
+    transform: scale(110%);
+}
+
+section .everest .camp h2 {
+    font-size: 22px;
+    color: var(--light-black);
+    margin: 20px auto
+}
+
+section .everest .camp p {
+    color: gray;
+    margin: 20px auto;
+    padding: 0 40px;
+    margin-bottom: 30px;
+}
+
+
+/* Main Part */
+
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 80px auto;
+}
+
+main .explore {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    padding: 50px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .explore h1 {
+    font-size: 50px;
+}
+
+main .explore p {
+    color: #ddd;
+    padding: 0 40px;
+    margin: 50px 0 70px;
+}
+
+
+/* Main Bottom Part */
+
+
+.bottom {
+    width: 80%;
+    margin: auto;
+}
+
+.bottom .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom .card .tours {
+    flex-basis: 40%;
+}
+
+.bottom .card .tours h1 {
+    font-size: 50px;
+    color: #484872;
+}
+
+.bottom .card .tours .underline {
+    margin-left: -1px;
+}
+
+.bottom .card .tours p {
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.bottom .card .tours .learn {
+    width: 120px;
+}
+
+.bottom .card .images {
+    flex-basis: 60%;
+}
+
+.bottom .card .images .images-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bottom .card .images img {
+    width: 300px;   
+    margin: 10px;
+    transition: 0.3s ease;
+}
+
+.bottom .card .images img:hover {
+    transform: scale(110%);
+}
+
+
+/* Footer Part */
+
+
+footer {
+    width: 100%;
+    padding: 20px 80px;
+    background-color: var(--light-black);
+    text-align: center;
+}
+
+footer p {
+    color: var(--text-color);
+    margin: 20px auto;
+    padding: 0 40px;
+}
+
+
+/* Media Part */
+
+@media screen and (max-width:768px) {
+    header .menu .menu-bars {
+        display: none;
+    }
+
+    header .menu i {
+        display: block;
+    }
+
+    section .everest {
+        flex-wrap: wrap;
+    }
+
+    section .everest .camp {
+        margin-bottom: 40px;
+    }
+
+    .bottom .card {
+        flex-wrap: wrap;
+    }
+
+    .bottom .card .tours {
+        flex-basis: 90%;
+        margin: auto;
+    }
+
+    .bottom .card .tours, .images {
+        margin-bottom: 40px;
+    }
+
+    .bottom .card .images {
+        margin: auto;
+    }
+
+    footer {
+        margin-top: 60px;
+    }
+}
